@@ -1,0 +1,23 @@
+:root {
+  --neutral-color-01: #fff;
+  --neutral-color-02: #f1f2f5;
+  --neutral-color-03: #e3e4ea;
+  --neutral-color-04: #dadbe1;
+  --neutral-color-05: #b7bac0;
+  --neutral-color-06: #78797d;
+  --neutral-color-07: #191a1b;
+
+  --primary-color-01: #3175fa;
+  --primary-color-02: #dcecff;
+  --primary-color-03: #2465e3;
+
+  --secondary-color-01: #fbbb1e;
+  --secondary-color-02: #e3a200;
+
+  --success-color: #38d600;
+  --warning-color: #f2bd02;
+  --error-color: #f74331;
+
+  --PNG-file-color: #DF5A3C;
+  --PDF-type-color: #4F8BFF;
+}

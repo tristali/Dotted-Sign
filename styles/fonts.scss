@@ -1,0 +1,69 @@
+@use 'sass:map';
+
+@use './breakpoints';
+
+$fontWeightMap: (
+  'bold': 700,
+  'medium': 500,
+  'regular': 400,
+);
+
+@mixin heading1($weight: 'regular') {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: map.get($fontWeightMap, $weight);
+
+  @include breakpoints.for-mobile-down {
+    line-height: 1.75rem;
+  }
+}
+
+@mixin heading2($weight: 'regular') {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: map.get($fontWeightMap, $weight);
+
+  @include breakpoints.for-mobile-down {
+    line-height: 1.5rem;
+  }
+}
+
+@mixin heading3($weight: 'regular') {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: map.get($fontWeightMap, $weight);
+
+  @include breakpoints.for-mobile-down {
+    line-height: 1.5rem;
+  }
+}
+
+@mixin paragraphLarge($weight: 'regular') {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: map.get($fontWeightMap, $weight);
+
+  @include breakpoints.for-mobile-down {
+    line-height: 1.75rem;
+  }
+}
+
+@mixin paragraph($weight: 'regular') {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: map.get($fontWeightMap, $weight);
+
+  @include breakpoints.for-mobile-down {
+    line-height: 1.75rem;
+  }
+}
+
+@mixin paragraphCaption($weight: 'regular') {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: map.get($fontWeightMap, $weight);
+
+  @include breakpoints.for-mobile-down {
+    line-height: 1.125rem;
+  }
+}

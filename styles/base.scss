@@ -1,0 +1,56 @@
+@use './fonts.scss';
+
+body {
+  color: var(--neutral-color-07);
+}
+
+h1 {
+  @include fonts.heading1;
+}
+
+h2 {
+  @include fonts.heading2;
+}
+
+h3 {
+  @include fonts.heading3;
+}
+
+p {
+  @include fonts.paragraph;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  @include fonts.paragraphCaption;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+input {
+  padding: 0.75rem 1rem;
+  color: var(--neutral-color-07);
+  border: solid 1px var(--neutral-color-04);
+  border-radius: var(--button-radius);
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--primary-color-01);
+  }
+
+  &::placeholder {
+    color: var(--neutral-color-05);
+  }
+}
